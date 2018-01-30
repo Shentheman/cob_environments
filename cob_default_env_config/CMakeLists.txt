@@ -17,14 +17,14 @@ catkin_package(
 )
 
 ### TEST ###
-if(CATKIN_ENABLE_TESTING)
-  find_package(roslaunch REQUIRED)
-  foreach(env ${envlist})
-    message("testing for env: ${env}")
-    roslaunch_add_file_check(. robot_env:=${env})
-    roslaunch_add_file_check(. ROBOT_ENV=${env})
-  endforeach()
-endif()
+#if(CATKIN_ENABLE_TESTING)
+#  find_package(roslaunch REQUIRED)
+#  foreach(env ${envlist})
+#    message("testing for env: ${env}")
+#    roslaunch_add_file_check(. robot_env:=${env})
+#    roslaunch_add_file_check(. ROBOT_ENV=${env})
+#  endforeach()
+#endif()
 
 ### INSTALL ###
 install(FILES
